@@ -164,7 +164,7 @@ export default function Manufacture(props) {
                                         variant="outlined"
                                         value={manuForm.productCode}
                                         onChange={handleChangeManufacturerForm}
-                                        label="Product Code"
+                                        label="Product Quantity"
                                         style={{ width: "100%" }}
                                     />
                                 </Grid>

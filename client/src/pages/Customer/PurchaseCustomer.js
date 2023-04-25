@@ -24,8 +24,8 @@ export default function PurchaseCustomer(props) {
   const [loading, setLoading] = React.useState(false);
   const navItem = [
     ["Purchase Product", "/Customer/buy"],
-    ["Receive Product", "/Customer/receive"],
-    ["Your Products", "/Customer/allReceived"],
+    // ["Receive Product", "/Customer/receive"],
+    // ["Your Products", "/Customer/allReceived"],
   ];
   React.useEffect(() => {
     (async () => {
@@ -132,7 +132,7 @@ export default function PurchaseCustomer(props) {
                             className={classes.TableHead}
                             align="center"
                           >
-                            Product Code
+                            Product Quantity
                           </TableCell>
                           <TableCell
                             className={classes.TableHead}

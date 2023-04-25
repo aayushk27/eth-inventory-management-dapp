@@ -136,7 +136,7 @@ export default function ShipManufacture(props) {
                           Universal ID
                         </TableCell>
                         <TableCell className={classes.TableHead} align="center">
-                          Product Code
+                          Product Quantity
                         </TableCell>
                         <TableCell className={classes.TableHead} align="center">
                           Manufacturer

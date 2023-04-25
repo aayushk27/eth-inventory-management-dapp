@@ -25,7 +25,7 @@ export default function PurchaseThirdParty(props) {
   const navItem = [
     ["Buy Product", "/ThirdParty/allProducts"],
     ["Receive Product", "/ThirdParty/receive"],
-    ["Ship Products", "/ThirdParty/ship"],
+    ["Send Products", "/ThirdParty/ship"],
   ];
   React.useEffect(() => {
     (async () => {
@@ -104,7 +104,7 @@ export default function PurchaseThirdParty(props) {
 
   return (
     <div classname={classes.pageWrap}>
-      <Navbar pageTitle={"Third Party"} navItems={navItem}>
+      <Navbar pageTitle={"Inventory"} navItems={navItem}>
         {loading ? (
           <Loader />
         ) : (
@@ -128,7 +128,7 @@ export default function PurchaseThirdParty(props) {
                           Universal ID
                         </TableCell>
                         <TableCell className={classes.TableHead} align="center">
-                          Product Code
+                          Product Quantity
                         </TableCell>
                         <TableCell className={classes.TableHead} align="center">
                           Manufacturer

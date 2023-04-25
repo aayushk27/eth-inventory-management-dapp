@@ -25,7 +25,7 @@ export default function ShipThirdParty(props) {
   const navItem = [
     ["Buy Product", "/ThirdParty/allProducts"],
     ["Receive Product", "/ThirdParty/receive"],
-    ["Ship Products", "/ThirdParty/ship"],
+    ["Send Products", "/ThirdParty/ship"],
   ];
   const [alertText, setalertText] = React.useState("");
   React.useEffect(() => {
@@ -110,7 +110,7 @@ export default function ShipThirdParty(props) {
   return (
     <>
       <div classname={classes.pageWrap}>
-        <Navbar pageTitle={"Third Party"} navItems={navItem}>
+        <Navbar pageTitle={"Inventory"} navItems={navItem}>
           {loading ? (
             <Loader />
           ) : (
@@ -120,7 +120,7 @@ export default function ShipThirdParty(props) {
                 open={open}
                 handleClose={handleClose}
               />
-              <h1 className={classes.pageHeading}>Products To be Shipped</h1>
+              <h1 className={classes.pageHeading}>Products To be Sent</h1>
               <h3 className={classes.tableCount}>
                 Total : {allSoldProducts.length}
               </h3>
@@ -139,7 +139,7 @@ export default function ShipThirdParty(props) {
                             className={classes.TableHead}
                             align="center"
                           >
-                            Product Code
+                            Product Quantity
                           </TableCell>
                           <TableCell
                             className={classes.TableHead}
@@ -172,7 +172,7 @@ export default function ShipThirdParty(props) {
                             className={clsx(classes.TableHead)}
                             align="center"
                           >
-                            Ship
+                            Send
                           </TableCell>
                         </TableRow>
                       </TableHead>
@@ -253,7 +253,7 @@ export default function ShipThirdParty(props) {
                                           handleShipButton(prod[0][0])
                                         }
                                       >
-                                        SHIP
+                                        Send
                                       </Button>
                                     </TableCell>
                                   </TableRow>

@@ -33,8 +33,8 @@ export default function Home() {
             >
               <img
                 alt="."
-                src="/homeArt.png"
-                style={{ width: "90%", height: "auto" }}
+                src="/inventory.png"
+                style={{ width: "100%", height: "auto" }}
               />
             </Grid>
 
@@ -93,21 +93,21 @@ export default function Home() {
                     variant="outlined"
                     color="primary"
                   >
-                    Third party
+                    Inventory
                   </Button>
                 </Link>
                 <Link
                   to="/DeliveryHub/receive"
                   style={{ textDecoration: "none", color: "#fff" }}
                 >
-                  <Button
+                  {/* <Button
                     className={classes.HomeBtn}
                     size="large"
                     variant="outlined"
                     color="primary"
                   >
                     delivery hub
-                  </Button>
+                  </Button> */}
                 </Link>
                 <Link
                   to="/Customer/buy"

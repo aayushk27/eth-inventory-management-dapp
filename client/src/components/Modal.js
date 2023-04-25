@@ -103,7 +103,7 @@ export default function ProductModal({
                     <div className={classes.dCol2}>{prod[1][1]}</div>
                   </div>
                   <div className={classes.dRow}>
-                    <div className={classes.dCol1}>Product Code:</div>{" "}
+                    <div className={classes.dCol1}>Product Quantity:</div>{" "}
                     <div className={classes.dCol2}>{prod[1][2]}</div>
                   </div>
 
@@ -121,19 +121,19 @@ export default function ProductModal({
                     <div className={classes.dCol2}>{prod[1][5]}</div>
                   </div>
                   <div className={classes.dRow}>
-                    <div className={classes.dCol1}>Third Party Address: </div>{" "}
+                    <div className={classes.dCol1}>Inventory Address: </div>{" "}
                     <div className={classes.dCol2}>{prod[1][6]}</div>
                   </div>
                   <div className={classes.dRow}>
-                    <div className={classes.dCol1}>Third Party Longitude: </div>{" "}
+                    <div className={classes.dCol1}>Inventory Longitude: </div>{" "}
                     <div className={classes.dCol2}>{prod[1][7]}</div>
                   </div>
                   <div className={classes.dRow}>
-                    <div className={classes.dCol1}>Third Party Latitude: </div>{" "}
+                    <div className={classes.dCol1}>Inventory Latitude: </div>{" "}
                     <div className={classes.dCol2}>{prod[2][0]}</div>
                   </div>
 
-                  <div className={classes.dRow}>
+                  {/* <div className={classes.dRow}>
                     <div className={classes.dCol1}>Delivery Hub Address:</div>{" "}
                     <div className={classes.dCol2}> {prod[2][1]}</div>
                   </div>
@@ -146,7 +146,7 @@ export default function ProductModal({
                   <div className={classes.dRow}>
                     <div className={classes.dCol1}>Delivery Hub Latitude:</div>{" "}
                     <div className={classes.dCol2}> {prod[2][3]}</div>
-                  </div>
+                  </div> */}
                   <div className={classes.dRow}>
                     <div className={classes.dCol1}>Customer Address: </div>{" "}
                     <div className={classes.dCol2}>{prod[2][4]}</div>

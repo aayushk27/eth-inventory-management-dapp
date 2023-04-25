@@ -110,7 +110,7 @@ function RoleAdmin(props) {
         <div className={classes.RoleForm} >
           <TextField
             id="thirdPartyRole"
-            label="Enter Third Party Address "
+            label="Enter Inventory Address "
             variant="outlined"
             value={thirdPartyRole}
             onChange={(e) => setThirdPartyRole(e.target.value)}
@@ -122,12 +122,12 @@ function RoleAdmin(props) {
             onClick={handleAddThirdPartyRole}
             style={{width:"30%", marginLeft:"10px"}}
           >
-            Add third party
+            Add Inventory
           </Button>
         </div>
       </form>
 
-      <form className={classes.root} noValidate autoComplete="off">
+      {/* <form className={classes.root} noValidate autoComplete="off">
         <div className={classes.RoleForm} >
           <TextField
             id="deliveryHubRole"
@@ -146,7 +146,7 @@ function RoleAdmin(props) {
             add delivery hub
           </Button>
         </div>
-      </form>
+      </form> */}
 
       <form className={classes.root} noValidate autoComplete="off">
         <div className={classes.RoleForm} >
@@ -169,13 +169,13 @@ function RoleAdmin(props) {
         </div>
       </form>
       </div>
-      <div className={classes.FormWrap}>
+      {/* <div className={classes.FormWrap}>
         <h1 className={classes.pageHeading}>Local Accounts</h1>
         {accounts.slice(1).map((acc) => (
           <h3 className={classes.tableCount}>{acc}</h3>
         ))}
         
-      </div>
+      </div> */}
 
       </ResponsiveDrawer>
     </div>

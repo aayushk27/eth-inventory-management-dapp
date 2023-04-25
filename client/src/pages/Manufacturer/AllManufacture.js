@@ -113,7 +113,7 @@ export default function AllManufacture(props) {
                             className={classes.TableHead}
                             align="center"
                           >
-                            Product Code
+                            Product Quantity
                           </TableCell>
                           <TableCell
                             className={classes.TableHead}

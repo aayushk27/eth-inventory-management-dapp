@@ -14,10 +14,10 @@ import "./App.css";
 import ReceiveThirdParty from "./pages/ThirdParty/ReceiveThirdParty";
 import PurchaseCustomer from "./pages/Customer/PurchaseCustomer";
 import ShipThirdParty from "./pages/ThirdParty/ShipThirdParty";
-import ReceiveDeliveryHub from "./pages/DeliveryHub/ReceiveDeliveryHub";
-import ShipDeliveryHub from "./pages/DeliveryHub/ShipDeliveryHub";
-import ReceiveCustomer from "./pages/Customer/ReceiveCustomer";
-import ReceivedByCustomer from "./pages/Customer/ReceivedByCustomer";
+// import ReceiveDeliveryHub from "./pages/DeliveryHub/ReceiveDeliveryHub";
+// import ShipDeliveryHub from "./pages/DeliveryHub/ShipDeliveryHub";
+// import ReceiveCustomer from "./pages/Customer/ReceiveCustomer";
+// import ReceivedByCustomer from "./pages/Customer/ReceivedByCustomer";
 import PurchaseThirdParty from "./pages/ThirdParty/PurshaseThirdParty";
 import RoleAdmin from "./pages/RoleAdmin";
 
@@ -118,7 +118,7 @@ class App extends Component {
               <ShipThirdParty accounts={this.state.accounts} supplyChainContract={this.state.contract} />
               : <h1>Assign Third Party Role at /RoleAdmin</h1> }
             </Route>
-            <Route exact path="/DeliveryHub/receive">
+            {/* <Route exact path="/DeliveryHub/receive">
             {this.state.dhRole !== "" ?
               <ReceiveDeliveryHub accounts={this.state.accounts} supplyChainContract={this.state.contract} />
               : <h1>Assign Delivery Hub Role at /RoleAdmin</h1> }
@@ -127,8 +127,8 @@ class App extends Component {
             {this.state.dhRole !== "" ?
               <ShipDeliveryHub accounts={this.state.accounts} supplyChainContract={this.state.contract} />
               : <h1>Assign Delivery Hub Role at /RoleAdmin</h1> }
-            </Route>
-            <Route exact path="/Customer/receive">
+            </Route> */}
+            {/* <Route exact path="/Customer/receive">
             {this.state.cRole !== "" ?
               <ReceiveCustomer accounts={this.state.accounts} supplyChainContract={this.state.contract} />
               : <h1>Assign Customer Role at /RoleAdmin</h1> }
@@ -137,7 +137,7 @@ class App extends Component {
             {this.state.cRole !== "" ?
               <ReceivedByCustomer accounts={this.state.accounts} supplyChainContract={this.state.contract} />
               : <h1>Assign Customer Role at /RoleAdmin</h1> }
-            </Route>
+            </Route> */}
             
           </Switch>
         </Router>

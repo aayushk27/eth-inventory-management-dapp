@@ -11,7 +11,6 @@ import ProductModal from "../components/Modal";
 import ReciptModal from "../components/ReciptModal";
 import TableRow from "@material-ui/core/TableRow";
 import { Grid } from "@material-ui/core";
-import { MapContainer } from "../components/map";
 import Button from "@material-ui/core/Button";
 import { useStyles } from "../components/Styles";
 import Loader from "../components/Loader";
@@ -28,11 +27,11 @@ const columns = [
 
 const map = [
   "Manufactured",
-  "Bought By Third Party",
+  "Bought By Inventory",
   "Shipped From Manufacturer",
-  "Received By Third Party",
+  "Received By Inventory",
   "Bought By Customer",
-  "Shipped By Third Party",
+  "Sent To Customer",
   "Received at DeliveHub",
   "Shipped From DeliveryHub",
   "Received By Customer",
@@ -138,7 +137,9 @@ export default function Explorer(props) {
             <CustomizedInputBase findProduct={findProduct} />
             {productData.length !== 0 ? (
               <>
-                <Grid container className={classes.Explorerroot} spacing={3}>
+                <Grid container className={classes.Explorerroot} spacing={3} direction="column"
+  alignItems="center"
+  justifyContent="center">
                   <Grid item xs={6}>
                     <Paper className={classes.ProductPaper}>
                       <div>
@@ -160,12 +161,12 @@ export default function Explorer(props) {
                         <div className={classes.ExplorerdRow}>
                           Details of Manufacturer : {productData[0][5]}
                         </div>
-                        <div className={classes.ExplorerdRow}>
+                        {/* <div className={classes.ExplorerdRow}>
                           Longitude of Manufature : {productData[0][6]}
                         </div>
                         <div className={classes.ExplorerdRow}>
                           Latitude of Manufature : {productData[0][7]}
-                        </div>
+                        </div> */}
                         <div className={classes.ExplorerdRow}>
                           Manufactured date : {productData[1][0]}
                         </div>
@@ -183,7 +184,7 @@ export default function Explorer(props) {
                     </Paper>
                   </Grid>
                   <Grid item xs={6} style={{ position: "relative" }}>
-                    <MapContainer prodData={productData} />
+                    {/* <MapContainer prodData={productData} /> */}
                   </Grid>
                 </Grid>
                 <br />
